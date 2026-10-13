@@ -1,0 +1,16 @@
+{
+  "name": "effective",
+  "displayName": "Effective",
+  "version": "0.1.0",
+  "description": "Competitive intelligence, regulatory research, and actuarial analysis for insurance, powered by Effective.",
+  "author": {
+    "name": "Effective",
+    "url": "https://effectiveailabs.com"
+  },
+  "license": "MIT",
+  "icon": "./icon.png",
+  "documentationUrl": "https://docs.effectiveai.app/getting-started/claude",
+  "privacyPolicyUrl": "https://effectiveailabs.com/privacy",
+  "termsOfServiceUrl": "https://effectiveailabs.com/terms",
+  "supportUrl": "https://effectiveailabs.com/support"
+}
