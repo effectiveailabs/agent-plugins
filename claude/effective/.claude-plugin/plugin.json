@@ -5,12 +5,20 @@
   "description": "Competitive intelligence, regulatory research, and actuarial analysis for insurance, powered by Effective.",
   "author": {
     "name": "Effective",
-    "url": "https://effectiveailabs.com"
+    "url": "https://effectiveailabs.com",
+    "email": "support@effectiveailabs.com"
   },
   "license": "MIT",
   "icon": "./icon.png",
   "documentationUrl": "https://docs.effectiveai.app/getting-started/claude",
   "privacyPolicyUrl": "https://effectiveailabs.com/privacy",
   "termsOfServiceUrl": "https://effectiveailabs.com/terms",
-  "supportUrl": "https://effectiveailabs.com/support"
+  "supportUrl": "https://effectiveailabs.com/support",
+  "repository": "https://github.com/effectiveailabs/agent-plugins",
+  "keywords": [
+    "insurance",
+    "competitive-intelligence",
+    "regulatory-research",
+    "actuarial"
+  ]
 }
