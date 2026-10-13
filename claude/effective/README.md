@@ -1,8 +1,10 @@
 # Effective
 
-Competitive intelligence, regulatory research, and actuarial analysis for insurance, powered by Effective.
+Compare insurance products, filings, coverage wording and rate changes; review actuarial evidence and prepare working filings with Effective.
 
 Use Effective from Claude to research insurance carriers, MGAs, products, regulatory filings and source documents, or manage working filings and document references.
+
+The included `effective` skill helps translate insurance tasks into supported calls, from comparing competitors to preparing filings and reviewing evidence.
 
 ## Connect
 
@@ -12,9 +14,14 @@ Your Effective account determines which organization and data you can access. Di
 
 ## Try it
 
-- Find an accessible carrier and summarize its available financial results.
-- Browse an accessible filing, list its documents, and read evidence from one.
-- Identify the API call for adding a comment to a working filing.
+- Compare competitors' filed rate changes for a line of business and state, with supporting evidence.
+- Compare exclusions and endorsements in two filings, including form numbers and editions.
+- Review a filing's actuarial memo and summarize the assumptions behind its rate change.
+- Create or update a working filing and organize its document references by schedule.
+- Review an objection letter and draft a response, or add the requested comment to a working filing.
+- Check available filing pre-review capabilities and summarize the findings.
+
+Available actions depend on the connector's documented endpoints and your account permissions. Preparing a filing workspace does not submit it to a regulator.
 
 The plugin connects to Effective's remote MCP server. It runs no local scripts, hooks or executables. The connector receives the query and inputs needed for each requested task. Discovery sends its query and optional intent to Anthropic Haiku through Vercel AI Gateway; Effective meters that usage. Data returned by Effective is available in the connected Claude conversation.
 

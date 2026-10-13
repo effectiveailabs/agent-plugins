@@ -1,8 +1,8 @@
 {
   "name": "effective",
   "displayName": "Effective",
-  "version": "0.1.0",
-  "description": "Competitive intelligence, regulatory research, and actuarial analysis for insurance, powered by Effective.",
+  "version": "0.1.1",
+  "description": "Compare insurance products, filings, coverage wording and rate changes; review actuarial evidence and prepare working filings with Effective.",
   "author": {
     "name": "Effective",
     "url": "https://effectiveailabs.com",
@@ -19,7 +19,10 @@
     "insurance",
     "competitive-intelligence",
     "regulatory-research",
-    "actuarial"
+    "actuarial",
+    "rate-filings",
+    "coverage-comparison",
+    "filing-preparation"
   ],
   "homepage": "https://effectiveailabs.com"
 }
