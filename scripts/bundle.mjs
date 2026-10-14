@@ -13,6 +13,8 @@ async function copyFolder(from, to) {
   await mkdir(to, { recursive: true });
   for (const entry of (await readdir(from, { withFileTypes: true })).sort((a, b) => a.name.localeCompare(b.name))) {
     if (entry.name === '.DS_Store') continue;
+    // Eval suites are development-only and must not ship in the upload bundle.
+    if (from === source && entry.name === 'evals') continue;
     if (entry.isSymbolicLink()) throw new Error(`Symlinks cannot be bundled: ${entry.name}`);
     const destination = join(to, entry.name);
     if (entry.isDirectory()) await copyFolder(join(from, entry.name), destination);
