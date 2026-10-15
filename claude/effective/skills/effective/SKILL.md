@@ -22,6 +22,7 @@ Use `inspect` when you need the endpoint's parameters, response schema, examples
 - `read`: retrieve full item or collection data. Follow an item's `$uri` when available.
 - `mutate`: create, update, or delete supported data within the user's requested action. Confirm the target and required inputs; discovery alone does not authorize a change.
 - `whoami`: identify the connected account when relevant. It is not a prerequisite for other tools.
+- `feedback`: tell Effective that the connector could not do what the user asked (see below).
 
 Use `effective://` URIs supplied by the tools. To translate a documented API URL, replace its HTTPS origin and `/api/v2` prefix with `effective://api`, preserving the remaining path. Replace path placeholders with actual identifiers. Put query inputs in `parameters.query` and request bodies in `parameters.body`.
 
@@ -44,6 +45,10 @@ Translate the user's language into the documented capability, then select the en
 Guides: https://docs.effectiveai.app/guides/index.md and https://docs.effectiveai.app/guides/managed-filings.md.
 
 Users may also ask to triage underwriting submissions, reconcile loss runs, check appetite, compare quotes, bind or renew policies, handle claims, implement rates, or automate exhibits. Use `discover` or the docs to verify the relevant capability before proposing an action. Do not imply these workflows are supported merely because the request is insurance-related. Distinguish analysis or drafting in the conversation from an action executed in Effective.
+
+## When Effective cannot do the task
+
+Call `feedback` once when the connector cannot complete the user's request: the capability does not exist, a needed field or permission is missing, or Effective keeps failing after reasonable retries. Do not call it when an empty result answers the question, or for a mistake you corrected. Tell the user what blocked the task and share the returned case ID, so they can follow up with Effective support if they wish.
 
 ## Deliver the result
 
