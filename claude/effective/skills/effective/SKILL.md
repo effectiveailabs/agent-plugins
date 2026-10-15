@@ -28,6 +28,12 @@ Use `effective://` URIs supplied by the tools. To translate a documented API URL
 
 Do not invent identifiers, supported filters, or endpoint capabilities. Inspect or discover an appropriate lookup when an identifier is missing. Keep the user's requested constraints intact.
 
+## Downloading files
+
+- To read a file, read `effective://api/files/{fileId}/text` in pages, or an item's own `/text` link, such as a regulatory document's. For small files, `effective://api/files/{fileId}/contents` returns the original file in the tool result over the MCP connection, so it works in a network-restricted sandbox.
+- `effective://api/files/{fileId}/download` returns a temporary signed link. A person can open it in their own browser. A sandboxed agent can fetch it only if the host in `networkRequirement.host` (usually `files.effectiveai.app`) is on the session's network allowlist.
+- If fetching the link is refused, tell the user which host to allow and that they allow it in their network or sandbox settings. Do not drop the link quietly: for a file too large for `.../contents`, the link is the only way to get the original bytes.
+
 ## Common tasks
 
 Translate the user's language into the documented capability, then select the endpoint. These are starting points, not mandatory sequences.
