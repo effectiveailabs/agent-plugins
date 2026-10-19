@@ -11,7 +11,7 @@ Use the Effective MCP connector to find evidence and work with the user's Effect
 
 Use either approach:
 
-- Call `discover` with a `query` describing the information or action requested. Add `intent` when the purpose helps choose the right endpoint or response fields. Review its suggested calls and resolve missing inputs or unsupported constraints. Suggestions describe possible calls; they are not results.
+- Call `discover` with a `query` describing the information or action requested. Add `intent` when the purpose helps choose the right endpoint or response fields. It returns up to three Markdown steps, each with the HTTP method, effective:// URI, a reason and parameter hints. Resolve each step's Needs, note any Not supported line, and use inspect for exact inputs. Steps describe possible calls; they are not results.
 - Read the API documentation at https://docs.effectiveai.app/llms.txt to choose an endpoint directly.
 
 Use `inspect` when you need the endpoint's parameters, response schema, examples, or access requirements. It is optional when the contract is already known.
