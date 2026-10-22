@@ -12,7 +12,7 @@ Use the Effective MCP connector to find evidence and work with the user's Effect
 Use either approach:
 
 - Call `discover` with a `query` describing the information or action requested. Add `intent` when the purpose helps choose the right endpoint or response fields. It returns up to three Markdown steps, each with the HTTP method, effective:// URI, a reason and parameter hints. Resolve each step's Needs, note any Not supported line, and use inspect for exact inputs. Steps describe possible calls; they are not results.
-- Read the API documentation at https://docs.effectiveai.app/llms.txt to choose an endpoint directly.
+- Scan [references/endpoints.md](references/endpoints.md), which lists every endpoint with a one-line summary, or read the API documentation at https://docs.effectiveai.app/llms.txt, to choose an endpoint directly.
 
 Use `inspect` when you need the endpoint's parameters, response schema, examples, or access requirements. It is optional when the contract is already known.
 
@@ -24,7 +24,7 @@ Use `inspect` when you need the endpoint's parameters, response schema, examples
 - `whoami`: identify the connected account when relevant. It is not a prerequisite for other tools.
 - `feedback`: tell Effective that the connector could not do what the user asked (see below).
 
-Use `effective://` URIs supplied by the tools. To translate a documented API URL, replace its HTTPS origin and `/api/v2` prefix with `effective://api`, preserving the remaining path. Replace path placeholders with actual identifiers. Put query inputs in `parameters.query` and request bodies in `parameters.body`.
+Use `effective://` URIs supplied by the tools, or documented Effective API URLs as they are. Replace path placeholders with actual identifiers. Put query inputs in `parameters.query` and request bodies in `parameters.body`.
 
 Do not invent identifiers, supported filters, or endpoint capabilities. Inspect or discover an appropriate lookup when an identifier is missing. Keep the user's requested constraints intact.
 
