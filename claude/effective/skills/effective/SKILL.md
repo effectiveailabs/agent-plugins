@@ -11,7 +11,7 @@ Use the Effective MCP connector to find evidence and work with the user's Effect
 
 Use either approach:
 
-- Call `discover` with a `query` describing the information or action requested. Add `intent` when the purpose helps choose the right endpoint or response fields. It returns up to three Markdown steps, each with the HTTP method, effective:// URI, a reason and parameter hints. Resolve each step's Needs, note any Not supported line, and use inspect for exact inputs. Steps describe possible calls; they are not results.
+- Call `discover` with a `query` describing the information or action requested and an `intent` saying why. It returns a numbered list of five to eight ranked endpoints, each with its method, effective:// URI, tool, a one-line description and required inputs, followed by the guide pages those endpoints cite, with the relevant sections named. Results are candidates from a search, not results or proof that an endpoint fits: check the top few against the task, open a guide URL for the workflow (or `read` it when you cannot fetch it), and use inspect for exact inputs.
 - Scan [references/endpoints.md](references/endpoints.md), which lists every endpoint with a one-line summary, or read the API documentation at https://docs.effectiveai.app/llms.txt, to choose an endpoint directly.
 
 Use `inspect` when you need the endpoint's parameters, response schema, examples, or access requirements. It is optional when the contract is already known.
@@ -19,7 +19,7 @@ Use `inspect` when you need the endpoint's parameters, response schema, examples
 ## Call Effective
 
 - `list`: browse a collection and choose the fields needed for the task.
-- `read`: retrieve full item or collection data. Follow an item's `$uri` when available.
+- `read`: retrieve full item or collection data. Follow an item's `$uri` when available. When you cannot fetch a guide (`https://docs.effectiveai.app/guides/...`) directly, `read` returns it as Markdown.
 - `mutate`: create, update, or delete supported data within the user's requested action. Confirm the target and required inputs; discovery alone does not authorize a change.
 - `whoami`: identify the connected account when relevant. It is not a prerequisite for other tools.
 - `feedback`: tell Effective that the connector could not do what the user asked (see below).
