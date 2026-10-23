@@ -26,8 +26,8 @@ When you already know the capability, pick it from
 ## Call Effective
 
 - Use the `effective://` URIs the tools return, or documented Effective API URLs
-  as they are. Replace path placeholders with real identifiers. Put query
-  inputs in `parameters.query` and request bodies in `parameters.body`.
+  as they are. Replace path placeholders with real identifiers. Pass query
+  inputs as `query` and request bodies as `body`.
 - Never invent identifiers, filters or capabilities. When an identifier is
   missing, find it with `list` or `discover`. Keep the user's constraints
   intact.
