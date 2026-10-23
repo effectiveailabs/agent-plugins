@@ -2,6 +2,39 @@
 
 Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a task, and `inspect` returns current inputs and responses. In MCP tools, use a path as `effective://api<path>`. With an API key, follow https://docs.effectiveai.app/getting-started/agent-setup.md to call it directly.
 
+## Contents
+
+- [Answers](#answers)
+- [Carrier groups](#carrier-groups)
+- [Carriers](#carriers)
+- [Companies](#companies)
+- [Files](#files)
+- [Filing objections](#filing-objections)
+- [Filings](#filings)
+- [Form comparisons](#form-comparisons)
+- [Insurance Types](#insurance-types)
+- [Jurisdictions](#jurisdictions)
+- [Loss reviews](#loss-reviews)
+- [Managed Filing Checks](#managed-filing-checks)
+- [Managed Filings](#managed-filings)
+- [Managed Products](#managed-products)
+- [MGAs](#mgas)
+- [NAIC statutory data](#naic-statutory-data)
+- [Objections](#objections)
+- [OSHA](#osha)
+- [Product timelines](#product-timelines)
+- [Product types](#product-types)
+- [Products](#products)
+- [Raters](#raters)
+- [Rating programs](#rating-programs)
+- [Regulatory documents](#regulatory-documents)
+- [SERFF Imports](#serff-imports)
+- [SERFF Insurance Types](#serff-insurance-types)
+- [Sessions](#sessions)
+- [Underwriting](#underwriting)
+- [Users](#users)
+- [Webhooks](#webhooks)
+
 ## Answers
 
 - `POST /answers` — Schedule an answer to a question
