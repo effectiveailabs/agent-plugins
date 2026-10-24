@@ -218,6 +218,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Product timelines
 
 - `GET /insurance/products/{productId}/timeline` — Get a product's timeline
+- `GET /insurance/products/{productId}/timeline/digest` — Get a digest of a product's timeline
 
 ## Product types
 
