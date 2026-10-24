@@ -36,16 +36,15 @@ When you already know the capability, pick it from
 - Change data with `mutate` only within what the user asked. Confirm the target
   and required inputs first; finding an endpoint does not authorize a change.
 
-## Direct API access
+## Direct EffectiveAI API Access
 
-Use the connector by default. Call the Effective API from a shell only when a
-key is already configured: `EFFECTIVE_API_KEY` is set, or the credentials file
-from https://docs.effectiveai.app/getting-started/agent-setup.md exists. Do not
-look for a key otherwise.
+| Situation | What to do |
+| --- | --- |
+| An API key is configured in your shell or saved locally by a previous Effective setup | Prefer the direct API via shell for easier composition. |
+| The task requires large file downloads and no key is available | Follow the [setup guide](https://docs.effectiveai.app/getting-started/agent-setup.md), show the user the approval link and code, and wait for browser approval. Then complete the task through the direct API via shell. |
+| Neither applies | Use the MCP connector. |
 
-To set one up, follow that guide. If the connector offers `authorize_api`, set
-`EFFECTIVE_AUTH_METHOD=mcp`, run the setup script and approve the `userCode` it
-prints with `authorize_api`. Never print a key or ask the user to paste one.
+Keep API keys and private device codes out of conversations and logs. Never ask the user to paste a key.
 
 ## Files
 
