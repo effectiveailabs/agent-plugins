@@ -48,7 +48,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /apps/{appId}` — Get an app
 - `PATCH /apps/{appId}` — Update an app
 - `DELETE /apps/{appId}` — Delete an app
-- `POST /apps/{appId}/release-uploads` — Upload an app release bundle
+- `POST /apps/{appId}/release-uploads` — Start a release bundle upload
 - `POST /apps/{appId}/deployments` — Deploy an app
 - `GET /apps/{appId}/deployments` — List app deployments
 - `GET /apps/{appId}/deployments/{deploymentId}` — Get an app deployment
@@ -60,7 +60,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `DELETE /apps/{appId}/secrets/{name}` — Delete an app secret
 - `GET /apps/{appId}/api-calls` — List app API calls
 - `POST /apps/{appId}/sign-ins` — Sign a browser in to an app
-- `POST /apps/{appId}/calls` — Call an app’s API
+- `POST /apps/{appId}/calls` — Call an app API route
 
 ## Carrier groups
 
