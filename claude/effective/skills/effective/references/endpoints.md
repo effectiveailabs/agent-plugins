@@ -147,6 +147,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/managed-filings/{filingId}/requirements` — Find supporting requirements for an existing filing
 - `GET /insurance/managed-filings/{filingId}/staging` — Check staging credentials
 - `POST /insurance/managed-filings/{filingId}/serff-sync` — Sync a managed filing from SERFF
+- `GET /insurance/managed-filings/{filingId}/history` — Read a filing's regulatory history
 - `GET /insurance/managed-filings` — List accessible filings
 - `POST /insurance/managed-filings` — Create a filing
 - `GET /insurance/managed-filings/{filingId}` — Read a filing Record
