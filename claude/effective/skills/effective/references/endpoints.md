@@ -4,6 +4,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 ## Contents
 
+- [Access](#access)
 - [Answers](#answers)
 - [Apps](#apps)
 - [Carrier groups](#carrier-groups)
@@ -13,6 +14,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Filing objections](#filing-objections)
 - [Filings](#filings)
 - [Form comparisons](#form-comparisons)
+- [Groups](#groups)
 - [Insurance Types](#insurance-types)
 - [Jurisdictions](#jurisdictions)
 - [Loss reviews](#loss-reviews)
@@ -35,6 +37,12 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Underwriting](#underwriting)
 - [Users](#users)
 - [Webhooks](#webhooks)
+
+## Access
+
+- `GET /access/{resource}` — Read a resource access list
+- `PUT /access/{resource}` — Replace a resource access list
+- `PATCH /access/{resource}` — Change selected resource access
 
 ## Answers
 
@@ -106,6 +114,10 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/form-comparisons` — List form comparisons
 - `GET /insurance/form-comparisons/{id}` — Get a form comparison
 - `DELETE /insurance/form-comparisons/{id}` — Delete a form comparison
+
+## Groups
+
+- `GET /groups` — List groups for sharing
 
 ## Insurance Types
 
@@ -347,6 +359,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Users
 
 - `GET /users/me` — Get current user
+- `GET /users` — List organization users
 
 ## Webhooks
 
