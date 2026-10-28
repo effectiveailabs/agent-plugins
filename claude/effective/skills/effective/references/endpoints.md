@@ -6,7 +6,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - [Access](#access)
 - [Answers](#answers)
-- [Apps](#apps)
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
 - [Companies](#companies)
@@ -48,27 +47,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `POST /answers` — Schedule an answer to a question
 - `GET /answers/{id}` — Get answer status or completed result
-
-## Apps
-
-- `POST /apps` — Create an app
-- `GET /apps` — List apps
-- `GET /apps/{appId}` — Get an app
-- `PATCH /apps/{appId}` — Update an app
-- `DELETE /apps/{appId}` — Delete an app
-- `POST /apps/{appId}/release-uploads` — Start a release bundle upload
-- `POST /apps/{appId}/deployments` — Deploy an app
-- `GET /apps/{appId}/deployments` — List app deployments
-- `GET /apps/{appId}/deployments/{deploymentId}` — Get an app deployment
-- `POST /apps/{appId}/archive` — Archive an app
-- `POST /apps/{appId}/restore` — Restore an archived app
-- `GET /apps/{appId}/secrets` — List app secrets
-- `GET /apps/{appId}/secrets/{name}` — Get an app secret
-- `PUT /apps/{appId}/secrets/{name}` — Set an app secret
-- `DELETE /apps/{appId}/secrets/{name}` — Delete an app secret
-- `GET /apps/{appId}/api-calls` — List app API calls
-- `POST /apps/{appId}/sign-ins` — Sign a browser in to an app
-- `POST /apps/{appId}/calls` — Call an app API route
 
 ## Carrier groups
 
