@@ -267,9 +267,11 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/raters` — List raters
 - `GET /insurance/raters/{id}` — Get a rater
 - `GET /insurance/raters/{id}/releases` — List rater releases
+- `POST /insurance/raters/{id}/releases` — Release an uploaded rater bundle
 - `GET /insurance/raters/{id}/releases/{releaseVersion}` — Get a rater release
 - `GET /insurance/raters/{id}/releases/{releaseVersion}/contract` — Get the input and output schemas of a rater release
 - `GET /insurance/raters/{id}/releases/{releaseVersion}/download` — Download a rater release bundle
+- `POST /insurance/raters/{id}/bundles` — Upload a rater bundle
 - `POST /insurance/raters/{id}/releases/{releaseVersion}/rate` — Rate a submission with a rater release
 - `POST /insurance/raters/{id}/rate` — Rate a submission with a rater’s latest release
 
