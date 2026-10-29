@@ -33,6 +33,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [SERFF Imports](#serff-imports)
 - [SERFF Insurance Types](#serff-insurance-types)
 - [Sessions](#sessions)
+- [Skills](#skills)
 - [Underwriting](#underwriting)
 - [Users](#users)
 - [Webhooks](#webhooks)
@@ -318,6 +319,12 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /sessions/{id}/messages` — List the conversation
 - `GET /sessions/{id}/messages/{messageId}` — Read a sent message and its reply
 - `GET /sessions/{id}/files` — List files the agent produced
+
+## Skills
+
+- `GET /skills` — List skills for local agents
+- `GET /skills/{skillId}` — Get a skill for local agents
+- `GET /skills/{skillId}/archive` — Download a skill for local agents
 
 ## Underwriting
 
