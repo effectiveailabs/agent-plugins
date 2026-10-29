@@ -324,7 +324,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `GET /skills` — List skills for local agents
 - `GET /skills/{skillId}` — Get a skill for local agents
-- `GET /skills/{skillId}/archive` — Download a skill for local agents
+- `GET /skills/{skillId}/bundle` — Download a skill for local agents
 
 ## Underwriting
 
