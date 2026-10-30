@@ -20,6 +20,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Managed Filing Checks](#managed-filing-checks)
 - [Managed Filings](#managed-filings)
 - [Managed Products](#managed-products)
+- [Market raters](#market-raters)
 - [MGAs](#mgas)
 - [NAIC statutory data](#naic-statutory-data)
 - [Objections](#objections)
@@ -27,8 +28,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Product timelines](#product-timelines)
 - [Product types](#product-types)
 - [Products](#products)
-- [Raters](#raters)
-- [Rating programs](#rating-programs)
 - [Regulatory documents](#regulatory-documents)
 - [SERFF Imports](#serff-imports)
 - [SERFF Insurance Types](#serff-insurance-types)
@@ -37,6 +36,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Underwriting](#underwriting)
 - [Users](#users)
 - [Webhooks](#webhooks)
+- [Your raters](#your-raters)
 
 ## Access
 
@@ -161,6 +161,19 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /insurance/managed-filings/products` — Create a product for filing preparation
 - `GET /insurance/managed-filings/products/{id}` — Get one product for filing preparation
 
+## Market raters
+
+- `GET /insurance/rating-programs` — List market raters
+- `GET /insurance/rating-programs/{id}` — Get a market rater
+- `PUT /insurance/rating-programs/{id}/subscription` — Subscribe to a market rater
+- `DELETE /insurance/rating-programs/{id}/subscription` — Unsubscribe from a market rater
+- `GET /insurance/rating-programs/{id}/versions/{version}/contract` — Get the input and output schemas of a market rater version
+- `POST /insurance/rating-programs/{id}/rate` — Rate a submission with the latest version of a market rater
+- `POST /insurance/rating-programs/{id}/versions/{version}/rate` — Rate a submission with a market rater version
+- `GET /insurance/rating-programs/{id}/versions` — List market rater versions
+- `GET /insurance/rating-programs/{id}/versions/{version}` — Get a market rater version
+- `GET /insurance/rating-programs/{id}/versions/{version}/download` — Download a market rater version
+
 ## MGAs
 
 - `GET /insurance/mgas` — List MGAs
@@ -262,32 +275,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /insurance/products/{productId}/rating-plan-requests` — Request rating plans for product states
 - `GET /insurance/products/{productId}/availability/{state}/rating-programs` — List which rating program versions rate a product in a state
 
-## Raters
-
-- `GET /insurance/raters` — List raters
-- `GET /insurance/raters/{id}` — Get a rater
-- `GET /insurance/raters/{id}/releases` — List rater releases
-- `POST /insurance/raters/{id}/releases` — Release an uploaded rater bundle
-- `GET /insurance/raters/{id}/releases/{releaseVersion}` — Get a rater release
-- `GET /insurance/raters/{id}/releases/{releaseVersion}/contract` — Get the input and output schemas of a rater release
-- `GET /insurance/raters/{id}/releases/{releaseVersion}/download` — Download a rater release bundle
-- `POST /insurance/raters/{id}/bundles` — Upload a rater bundle
-- `POST /insurance/raters/{id}/releases/{releaseVersion}/rate` — Rate a submission with a rater release
-- `POST /insurance/raters/{id}/rate` — Rate a submission with a rater’s latest release
-
-## Rating programs
-
-- `GET /insurance/rating-programs` — List rating programs
-- `GET /insurance/rating-programs/{id}` — Get a rating program
-- `PUT /insurance/rating-programs/{id}/subscription` — Subscribe to a rating program
-- `DELETE /insurance/rating-programs/{id}/subscription` — Unsubscribe from a rating program
-- `GET /insurance/rating-programs/{id}/versions` — List program versions
-- `GET /insurance/rating-programs/{id}/versions/{version}` — Get a program version
-- `GET /insurance/rating-programs/{id}/versions/{version}/download` — Download a program version
-- `GET /insurance/rating-programs/{id}/versions/{version}/contract` — Get the input and output schemas of a program version
-- `POST /insurance/rating-programs/{id}/rate` — Rate a submission using the latest program version
-- `POST /insurance/rating-programs/{id}/versions/{version}/rate` — Rate a submission
-
 ## Regulatory documents
 
 - `GET /insurance/regulatory-documents` — Find regulatory documents
@@ -356,3 +343,16 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `PATCH /webhook-endpoints/{id}` — Update a webhook endpoint
 - `DELETE /webhook-endpoints/{id}` — Delete a webhook endpoint
 - `POST /webhook-endpoints/{id}/test` — Send a test event
+
+## Your raters
+
+- `GET /insurance/raters` — List raters
+- `GET /insurance/raters/{id}` — Get a rater
+- `POST /insurance/raters/{id}/bundles` — Upload a rater bundle
+- `POST /insurance/raters/{id}/releases` — Release an uploaded rater bundle
+- `GET /insurance/raters/{id}/releases` — List rater releases
+- `GET /insurance/raters/{id}/releases/{releaseVersion}/contract` — Get the input and output schemas of a rater release
+- `POST /insurance/raters/{id}/rate` — Rate a submission with a rater’s latest release
+- `POST /insurance/raters/{id}/releases/{releaseVersion}/rate` — Rate a submission with a rater release
+- `GET /insurance/raters/{id}/releases/{releaseVersion}` — Get a rater release
+- `GET /insurance/raters/{id}/releases/{releaseVersion}/download` — Download a rater release bundle
