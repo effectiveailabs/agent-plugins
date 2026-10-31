@@ -5,6 +5,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Contents
 
 - [Access](#access)
+- [Agent email aliases](#agent-email-aliases)
 - [Answers](#answers)
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
@@ -43,6 +44,14 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /access/{resource}` — Read a resource access list
 - `PUT /access/{resource}` — Replace a resource access list
 - `PATCH /access/{resource}` — Change selected resource access
+
+## Agent email aliases
+
+- `GET /agent-email/aliases` — List agent email aliases
+- `POST /agent-email/aliases` — Create an agent email alias
+- `GET /agent-email/aliases/{alias}` — Get an agent email alias
+- `PUT /agent-email/aliases/{alias}` — Replace alias routing config
+- `DELETE /agent-email/aliases/{alias}` — Delete an agent email alias
 
 ## Answers
 
