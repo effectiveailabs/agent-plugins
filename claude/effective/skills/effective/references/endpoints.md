@@ -321,13 +321,10 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Skills
 
 - `POST /skills/publications` — Publish a complete immutable team or project skill
-- `GET /skills/catalog` — Discover published team and project skills without downloading files
-- `GET /skills/catalog/{skillId}` — Get a published skill descriptor and current publication
-- `GET /skills/publications/{publicationId}/files` — Read one file from an immutable skill publication
 - `GET /skills/{skillId}/snapshot` — Download an editable team or project skill snapshot
 - `DELETE /skills/{skillId}` — Delete a published team or project skill
-- `GET /skills/{skillId}` — Get a skill for local agents
-- `GET /skills` — List skills for local agents
+- `GET /skills/{skillId}` — Get skill metadata and file manifest
+- `GET /skills` — List available skills
 - `GET /skills/{skillId}/bundle` — Download a skill for local agents
 
 ## Underwriting
