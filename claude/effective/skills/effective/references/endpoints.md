@@ -35,6 +35,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Sessions](#sessions)
 - [Skills](#skills)
 - [Underwriting](#underwriting)
+- [Underwriting workbench](#underwriting-workbench)
 - [Users](#users)
 - [Webhooks](#webhooks)
 - [Your raters](#your-raters)
@@ -341,6 +342,18 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/uw-submissions/{submissionId}/file/inputs` — List an underwriting file's inputs
 - `POST /insurance/uw-submissions/{submissionId}/file/inputs` — Record an input on an underwriting file
 - `GET /insurance/uw-submissions/{submissionId}/file/inputs/{inputId}` — Get one underwriting file input
+
+## Underwriting workbench
+
+- `POST /insurance/underwriting/manuals` — Create an underwriting manual
+- `GET /insurance/underwriting/manuals` — List underwriting manuals
+- `GET /insurance/underwriting/manuals/{manualId}` — Get an underwriting manual
+- `GET /insurance/underwriting/manuals/{manualId}/schema` — Get an underwriting manual's schema
+- `POST /insurance/underwriting/files` — Start an underwriting file
+- `GET /insurance/underwriting/files` — List underwriting files
+- `GET /insurance/underwriting/files/{fileId}` — Get an underwriting file
+- `POST /insurance/underwriting/files/{fileId}/statements` — Record statements on an underwriting file
+- `GET /insurance/underwriting/files/{fileId}/log` — List an underwriting file's log
 
 ## Users
 
