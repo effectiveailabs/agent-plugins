@@ -356,6 +356,9 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/underwriting/files/{fileId}` — Get an underwriting file
 - `POST /insurance/underwriting/files/{fileId}/statements` — Record statements on an underwriting file
 - `GET /insurance/underwriting/files/{fileId}/log` — List an underwriting file's log
+- `POST /insurance/underwriting/files/{fileId}/documents` — Receive a document on an underwriting file
+- `GET /insurance/underwriting/files/{fileId}/documents` — List an underwriting file's documents
+- `GET /insurance/underwriting/files/{fileId}/documents/{documentId}/versions/{version}/content` — Get the bytes of a document version
 
 ## Users
 
