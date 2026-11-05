@@ -283,6 +283,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/products/{productId}/resources/{resourceId}` — Get an associated product resource
 - `GET /insurance/products/{productId}/rating-plan-requests` — List your organization's rating plan requests for a product
 - `POST /insurance/products/{productId}/rating-plan-requests` — Request rating plans for product states
+- `GET /insurance/products/{productId}/catalog-requests` — Get your organization's catalog request for a product
+- `POST /insurance/products/{productId}/catalog-requests` — Ask Effective to catalogue a product
 - `GET /insurance/products/{productId}/availability/{state}/rating-programs` — List which rating program versions rate a product in a state
 
 ## Regulatory documents
