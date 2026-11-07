@@ -10,6 +10,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
 - [Companies](#companies)
+- [Email intake](#email-intake)
 - [Files](#files)
 - [Filing objections](#filing-objections)
 - [Filings](#filings)
@@ -74,6 +75,10 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/managed-filings/companies` — Find companies for filing preparation
 - `POST /insurance/managed-filings/companies` — Create a company for filing preparation
 - `GET /insurance/managed-filings/companies/{id}` — Get one company for filing preparation
+
+## Email intake
+
+- `POST /agent-email/intakes/{intakeId}/reprocess` — Process captured email intake again
 
 ## Files
 
