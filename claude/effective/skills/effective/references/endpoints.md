@@ -185,6 +185,9 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/rating-programs/{id}/versions/{version}/contract` — Get the input and output schemas of a market rater version
 - `POST /insurance/rating-programs/{id}/rate` — Rate a submission with the latest version of a market rater
 - `POST /insurance/rating-programs/{id}/versions/{version}/rate` — Rate a submission with a market rater version
+- `POST /insurance/rating-programs/plan` — Plan the next question for market rater versions
+- `POST /insurance/rating-programs/match` — Match a said or read answer to a planning question
+- `GET /insurance/rating-programs/{id}/versions/{version}/lists/{name}` — Search a long list of a market rater version
 - `GET /insurance/rating-programs/{id}/versions` — List market rater versions
 - `GET /insurance/rating-programs/{id}/versions/{version}` — Get a market rater version
 - `GET /insurance/rating-programs/{id}/versions/{version}/download` — Download a market rater version
