@@ -384,6 +384,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 ## Your raters
 
+- `GET /insurance/raters/{id}/executions` — List rater executions
+- `GET /insurance/raters/{id}/executions/{executionId}` — Get a saved rater execution
 - `GET /insurance/raters` — List raters
 - `GET /insurance/raters/{id}` — Get a rater
 - `POST /insurance/raters/{id}/bundles` — Upload a rater bundle
