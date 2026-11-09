@@ -10,7 +10,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
 - [Companies](#companies)
-- [Email intake](#email-intake)
 - [Files](#files)
 - [Filing objections](#filing-objections)
 - [Filings](#filings)
@@ -35,8 +34,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [SERFF Insurance Types](#serff-insurance-types)
 - [Sessions](#sessions)
 - [Skills](#skills)
-- [Underwriting](#underwriting)
-- [Underwriting workbench](#underwriting-workbench)
 - [Users](#users)
 - [Webhooks](#webhooks)
 - [Your raters](#your-raters)
@@ -75,10 +72,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/managed-filings/companies` — Find companies for filing preparation
 - `POST /insurance/managed-filings/companies` — Create a company for filing preparation
 - `GET /insurance/managed-filings/companies/{id}` — Get one company for filing preparation
-
-## Email intake
-
-- `POST /agent-email/intakes/{intakeId}/reprocess` — Process captured email intake again
 
 ## Files
 
@@ -337,36 +330,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /skills/{skillId}` — Get skill metadata and file manifest
 - `GET /skills` — List available skills
 - `GET /skills/{skillId}/bundle` — Download a skill for local agents
-
-## Underwriting
-
-- `GET /insurance/uw-guidelines` — List a product's underwriting guidelines
-- `POST /insurance/uw-guidelines` — Add underwriting guidelines to a product
-- `GET /insurance/uw-guidelines/{guidelinesId}` — Get underwriting guidelines
-- `POST /insurance/uw-guidelines/{guidelinesId}/versions` — Save a new version of underwriting guidelines
-- `GET /insurance/uw-submissions` — List underwriting submissions
-- `POST /insurance/uw-submissions` — Start an underwriting submission
-- `GET /insurance/uw-submissions/{submissionId}` — Get an underwriting submission
-- `POST /insurance/uw-submissions/{submissionId}/file` — Open a submission's underwriting file
-- `GET /insurance/uw-submissions/{submissionId}/file` — Get a submission's underwriting file
-- `GET /insurance/uw-submissions/{submissionId}/file/inputs` — List an underwriting file's inputs
-- `POST /insurance/uw-submissions/{submissionId}/file/inputs` — Record an input on an underwriting file
-- `GET /insurance/uw-submissions/{submissionId}/file/inputs/{inputId}` — Get one underwriting file input
-
-## Underwriting workbench
-
-- `POST /insurance/underwriting/manuals` — Create an underwriting manual
-- `GET /insurance/underwriting/manuals` — List underwriting manuals
-- `GET /insurance/underwriting/manuals/{manualId}` — Get an underwriting manual
-- `GET /insurance/underwriting/manuals/{manualId}/schema` — Get an underwriting manual's schema
-- `POST /insurance/underwriting/files` — Start an underwriting file
-- `GET /insurance/underwriting/files` — List underwriting files
-- `GET /insurance/underwriting/files/{fileId}` — Get an underwriting file
-- `POST /insurance/underwriting/files/{fileId}/statements` — Record statements on an underwriting file
-- `GET /insurance/underwriting/files/{fileId}/log` — List an underwriting file's log
-- `POST /insurance/underwriting/files/{fileId}/documents` — Receive a document on an underwriting file
-- `GET /insurance/underwriting/files/{fileId}/documents` — List an underwriting file's documents
-- `GET /insurance/underwriting/files/{fileId}/documents/{documentId}/versions/{version}/content` — Get the bytes of a document version
 
 ## Users
 
