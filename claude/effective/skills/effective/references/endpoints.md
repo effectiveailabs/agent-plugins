@@ -265,8 +265,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 ## Products
 
-- `GET /insurance/product-profile/schema` — Discover product profile fields
-- `GET /insurance/product-profile/options` — Get conditional target-market choices
 - `GET /insurance/product-access` — Get the products you have access to
 - `GET /insurance/product-lines` — List the lines of business products use
 - `GET /insurance/products` — List products
@@ -276,10 +274,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/products/{productId}/availability/{state}/rate-manuals` — Get recorded product rate manuals in a state
 - `GET /insurance/products/{productId}/availability/{state}/forms` — Get recorded product forms in a state
 - `GET /insurance/products/{productId}/availability/{state}/marketing` — Get recorded product marketing in a state
-- `GET /insurance/products/{productId}/availability/{state}/events` — List published product events in a state
-- `GET /insurance/products/{productId}/events` — List published events across a product’s states
-- `GET /insurance/products/{productId}/events/{id}` — Get one recorded product event
-- `GET /insurance/products/{productId}/profile` — Get a product profile
 - `GET /insurance/products/{productId}/resources` — List associated product resources
 - `GET /insurance/products/{productId}/resources/{resourceId}` — Get an associated product resource
 - `GET /insurance/products/{productId}/rating-plan-requests` — List your organization's rating plan requests for a product
