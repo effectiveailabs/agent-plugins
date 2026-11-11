@@ -36,6 +36,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Skills](#skills)
 - [Users](#users)
 - [Webhooks](#webhooks)
+- [Your programs](#your-programs)
 - [Your raters](#your-raters)
 
 ## Access
@@ -339,6 +340,16 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `PATCH /webhook-endpoints/{id}` — Update a webhook endpoint
 - `DELETE /webhook-endpoints/{id}` — Delete a webhook endpoint
 - `POST /webhook-endpoints/{id}/test` — Send a test event
+
+## Your programs
+
+- `GET /rsl` — List programs
+- `GET /rsl/{id}` — Get a program
+- `POST /rsl/{id}/uploads` — Upload a program bundle
+- `POST /rsl/{id}/releases` — Release an uploaded program bundle
+- `GET /rsl/{id}/releases` — List program releases
+- `GET /rsl/{id}/releases/{releaseVersion}` — Get a program release
+- `GET /rsl/{id}/releases/{releaseVersion}/download` — Download a program release bundle
 
 ## Your raters
 
