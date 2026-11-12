@@ -352,6 +352,14 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /rsl/{id}/releases` — List program releases
 - `GET /rsl/{id}/releases/{releaseVersion}` — Get a program release
 - `GET /rsl/{id}/releases/{releaseVersion}/download` — Download a program release bundle
+- `GET /rsl/{id}/releases/{releaseVersion}/contract` — Get the contract of a program release
+- `POST /rsl/{id}/releases/{releaseVersion}/rate` — Rate with a program release
+- `GET /rsl/{id}/releases/{releaseVersion}/{alias}/contract` — Get the contract of a used rater of a program release
+- `POST /rsl/{id}/releases/{releaseVersion}/{alias}/rate` — Rate with a used rater of a program release
+- `GET /rsl/{id}/contract` — Get the contract of a program’s latest release
+- `POST /rsl/{id}/rate` — Rate with a program’s latest release
+- `GET /rsl/{id}/{alias}/contract` — Get the contract of a used rater of a program’s latest release
+- `POST /rsl/{id}/{alias}/rate` — Rate with a used rater of a program’s latest release
 
 ## Your raters
 
