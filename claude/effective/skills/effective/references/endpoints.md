@@ -181,6 +181,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /insurance/rating-programs/{id}/versions/{version}/rate` — Rate a submission with a market rater version
 - `POST /insurance/rating-programs/plan` — Plan the next question for market rater versions
 - `POST /insurance/rating-programs/match` — Match a said or read answer to a planning question
+- `POST /insurance/rating-programs/search` — Search the answers of a planning question
 - `GET /insurance/rating-programs/{id}/lists/{name}` — Search a long list of the latest version of a market rater
 - `GET /insurance/rating-programs/{id}/versions/{version}/lists/{name}` — Search a long list of a market rater version
 - `GET /insurance/rating-programs/{id}/versions` — List market rater versions
