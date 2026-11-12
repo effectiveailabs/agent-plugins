@@ -345,6 +345,14 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 ## Your programs
 
+- `GET /rsl/{id}/logs/{log}` — Get a log
+- `POST /rsl/{id}/logs/{log}` — Open a log
+- `POST /rsl/{id}/logs/{log}/commands` — Write to a log
+- `POST /rsl/{id}/logs/{log}/what-if` — Preview a write to a log
+- `GET /rsl/{id}/logs/{log}/verdict` — Get the verdict of a log
+- `GET /rsl/{id}/logs/{log}/answers` — Get the answers in a log
+- `GET /rsl/{id}/logs/{log}/entries` — List the entries of a log
+- `GET /rsl/{id}/logs/{log}/refusals` — List the refused writes to a log
 - `GET /rsl` — List programs
 - `GET /rsl/{id}` — Get a program
 - `POST /rsl/{id}/uploads` — Upload a program bundle
