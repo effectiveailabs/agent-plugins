@@ -296,6 +296,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## SERFF Imports
 
 - `POST /insurance/serff-import-sessions` — Open your SERFF import conversation
+- `GET /insurance/serff-import-items/{id}/uploaded-document` — Recover a document uploaded by a SERFF import
 - `POST /insurance/serff-import-items` — Save selected SERFF filings for import
 - `GET /insurance/serff-import-items` — List your saved import selections
 - `GET /insurance/serff-import-items/{id}` — Read a saved import selection
