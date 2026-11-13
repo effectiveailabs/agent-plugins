@@ -354,6 +354,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /rsl/{id}/logs/{log}/entries` — List the entries of a log
 - `GET /rsl/{id}/logs/{log}/refusals` — List the refused writes to a log
 - `GET /rsl/{id}/logs` — List a program’s logs
+- `GET /rsl/{id}/roles` — Get who holds the program’s roles
+- `PUT /rsl/{id}/roles` — Replace who holds the program’s roles
 - `GET /rsl` — List programs
 - `GET /rsl/{id}` — Get a program
 - `POST /rsl/{id}/uploads` — Upload a program bundle
