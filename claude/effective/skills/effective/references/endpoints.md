@@ -348,8 +348,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /rsl/{id}/logs/{log}` — Get a log
 - `POST /rsl/{id}/logs/{log}` — Open a log
 - `POST /rsl/{id}/logs/{log}/commands` — Write to a log
-- `POST /rsl/{id}/logs/{log}/what-if` — Preview a write to a log
-- `GET /rsl/{id}/logs/{log}/verdict` — Get the verdict of a log
+- `POST /rsl/{id}/logs/{log}/preview` — Preview a write to a log
+- `GET /rsl/{id}/logs/{log}/status` — Get the status of a log
 - `GET /rsl/{id}/logs/{log}/answers` — Get the answers in a log
 - `GET /rsl/{id}/logs/{log}/entries` — List the entries of a log
 - `GET /rsl/{id}/logs/{log}/refusals` — List the refused writes to a log
@@ -361,13 +361,13 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /rsl/{id}/releases/{releaseVersion}` — Get a program release
 - `GET /rsl/{id}/releases/{releaseVersion}/download` — Download a program release bundle
 - `GET /rsl/{id}/releases/{releaseVersion}/contract` — Get the contract of a program release
-- `POST /rsl/{id}/releases/{releaseVersion}/rate` — Rate with a program release
+- `POST /rsl/{id}/releases/{releaseVersion}/evaluate` — Evaluate a program release
 - `GET /rsl/{id}/releases/{releaseVersion}/{alias}/contract` — Get the contract of a used rater of a program release
-- `POST /rsl/{id}/releases/{releaseVersion}/{alias}/rate` — Rate with a used rater of a program release
+- `POST /rsl/{id}/releases/{releaseVersion}/{alias}/evaluate` — Evaluate a used rater of a program release
 - `GET /rsl/{id}/contract` — Get the contract of a program’s latest release
-- `POST /rsl/{id}/rate` — Rate with a program’s latest release
+- `POST /rsl/{id}/evaluate` — Evaluate a program’s latest release
 - `GET /rsl/{id}/{alias}/contract` — Get the contract of a used rater of a program’s latest release
-- `POST /rsl/{id}/{alias}/rate` — Rate with a used rater of a program’s latest release
+- `POST /rsl/{id}/{alias}/evaluate` — Evaluate a used rater of a program’s latest release
 
 ## Your raters
 
