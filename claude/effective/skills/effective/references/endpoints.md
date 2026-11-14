@@ -352,6 +352,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /rsl/{id}/logs/{log}/status` — Get the status of a log
 - `GET /rsl/{id}/logs/{log}/answers` — Get the answers in a log
 - `GET /rsl/{id}/logs/{log}/entries` — List the entries of a log
+- `POST /rsl/{id}/logs/{log}/receipts` — Record a receipt on a log
+- `GET /rsl/{id}/logs/{log}/receipts` — List the receipts on a log
 - `GET /rsl/{id}/logs/{log}/refusals` — List the refused writes to a log
 - `GET /rsl/{id}/logs` — List a program’s logs
 - `GET /rsl/{id}/roles` — Get who holds the program’s roles
