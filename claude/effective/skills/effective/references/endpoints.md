@@ -26,6 +26,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [NAIC statutory data](#naic-statutory-data)
 - [Objections](#objections)
 - [OSHA](#osha)
+- [Procedure runs](#procedure-runs)
 - [Product timelines](#product-timelines)
 - [Product types](#product-types)
 - [Products](#products)
@@ -255,6 +256,10 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/osha/accidents/{summaryNr}/injuries` — List an accident’s injured workers
 - `GET /insurance/osha/search` — Search OSHA narratives
 - `GET /insurance/osha/incidence-rates` — Get OSHA incidence rates for an industry
+
+## Procedure runs
+
+- `DELETE /procedure-runs/{runId}` — Delete a finished procedure run
 
 ## Product timelines
 
