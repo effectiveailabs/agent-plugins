@@ -9,6 +9,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Answers](#answers)
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
+- [Classifications](#classifications)
 - [Companies](#companies)
 - [Files](#files)
 - [Filing objections](#filing-objections)
@@ -68,6 +69,14 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `GET /insurance/carriers` — List carriers
 - `GET /insurance/carriers/{id}` — Get a carrier
+
+## Classifications
+
+- `GET /insurance/classifications` — List classification systems
+- `GET /insurance/classifications/{system}` — Get one classification system
+- `GET /insurance/classifications/{system}/classes` — Find classes in a classification system
+- `GET /insurance/classifications/{system}/classes/{code}` — Get one class in a classification system
+- `GET /insurance/classifications/{system}/mappings` — Map classes to another classification system
 
 ## Companies
 
