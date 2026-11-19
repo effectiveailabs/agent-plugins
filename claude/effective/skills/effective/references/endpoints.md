@@ -184,8 +184,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `GET /insurance/rating-programs` — List market raters
 - `GET /insurance/rating-programs/{id}` — Get a market rater
-- `PUT /insurance/rating-programs/{id}/subscription` — Subscribe to a market rater
-- `DELETE /insurance/rating-programs/{id}/subscription` — Unsubscribe from a market rater
 - `GET /insurance/rating-programs/{id}/versions/{version}/contract` — Get the input and output schemas of a market rater version
 - `POST /insurance/rating-programs/{id}/rate` — Rate a submission with the latest version of a market rater
 - `POST /insurance/rating-programs/{id}/versions/{version}/rate` — Rate a submission with a market rater version
@@ -197,6 +195,8 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/rating-programs/{id}/versions` — List market rater versions
 - `GET /insurance/rating-programs/{id}/versions/{version}` — Get a market rater version
 - `GET /insurance/rating-programs/{id}/versions/{version}/download` — Download a market rater version
+- `GET /insurance/rating-programs/{id}/versions/{version}/manual-file` — Read a rating manual file
+- `GET /insurance/rating-programs/{id}/versions/{version}/export` — Export a rating manual file
 
 ## MGAs
 
