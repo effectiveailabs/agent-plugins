@@ -273,7 +273,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /procedures/runs` — List procedure runs
 - `GET /procedures/runs/{runId}` — Get a procedure run
 - `POST /procedures/runs/{runId}/cancel` — Cancel a procedure run
-- `DELETE /procedure-runs/{runId}` — Delete a finished procedure run
+- `DELETE /procedure-runs/{runId}` — Delete a finished procedure run (Deprecated; works until at least 2027-03-01)
 
 ## Procedures
 
