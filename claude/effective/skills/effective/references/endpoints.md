@@ -28,6 +28,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Objections](#objections)
 - [OSHA](#osha)
 - [Procedure runs](#procedure-runs)
+- [Procedure tasks](#procedure-tasks)
 - [Procedures](#procedures)
 - [Product timelines](#product-timelines)
 - [Product types](#product-types)
@@ -274,6 +275,12 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /procedures/runs/{runId}` — Get a procedure run
 - `POST /procedures/runs/{runId}/cancel` — Cancel a procedure run
 - `DELETE /procedure-runs/{runId}` — Delete a finished procedure run (Deprecated; works until at least 2027-03-01)
+
+## Procedure tasks
+
+- `GET /procedures/tasks` — List procedure tasks
+- `GET /procedures/tasks/{taskId}` — Get a procedure task
+- `POST /procedures/tasks/{taskId}/submissions` — Answer a procedure task
 
 ## Procedures
 
