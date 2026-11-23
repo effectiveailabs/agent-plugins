@@ -40,6 +40,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Sessions](#sessions)
 - [Skills](#skills)
 - [Users](#users)
+- [Views](#views)
 - [Webhooks](#webhooks)
 - [Your programs](#your-programs)
 - [Your raters](#your-raters)
@@ -375,6 +376,31 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `GET /users/me` — Get current user
 - `GET /users` — List organization users
+
+## Views
+
+- `GET /customization/slots` — The slot catalog
+- `GET /customization/slots/{slot}/versions/{version}/declarations` — A slot version's declaration file
+- `POST /customization/checks` — Check view source without storing it
+- `GET /customization/publication-requests` — List publication requests
+- `GET /customization/publication-requests/{request}` — Review a publication request
+- `POST /customization/publication-requests/{request}/decision` — Approve or decline a publication request
+- `GET /customization/lineups` — List the organization's lineups
+- `PUT /customization/lineups/{desk}/{slot}` — Set a slot's lineup on a desk
+- `GET /customization/live` — A desk's live views for its slots
+- `POST /customization/view-reports` — Report how views ran on a desk page
+- `GET /customization/bundles/{digest}` — A bundle by digest
+- `POST /customization/views` — Create a view
+- `GET /customization/views` — List the organization's views
+- `GET /customization/views/{view}` — Read a view
+- `DELETE /customization/views/{view}` — Delete an unpublished view
+- `POST /customization/views/{view}/versions` — Upload a version
+- `GET /customization/views/{view}/versions` — List a view's versions
+- `GET /customization/views/{view}/versions/{version}` — Read a version
+- `POST /customization/views/{view}/publication-requests` — Ask for publication
+- `PUT /customization/views/{view}/publication` — Publish a version
+- `DELETE /customization/views/{view}/publication` — Unpublish a view
+- `GET /customization/views/{view}/versions/{version}/preview` — Preview a stored version
 
 ## Webhooks
 
