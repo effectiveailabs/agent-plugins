@@ -48,13 +48,17 @@ Keep API keys and private device codes out of conversations and logs. Never ask 
 
 ## Files
 
-- Read a file's text from `effective://api/files/{fileId}/text`, in pages, or
+Every stored file is an artifact. A `fileId` in any result is the same ID as
+`artifactId`; use it in the artifact URIs below. The older `effective://api/files/...`
+URIs are deprecated.
+
+- Read a file's text from `effective://api/artifacts/{artifactId}/text`, in pages, or
   from an item's own `/text` link, such as a regulatory document's. Pass
   `pages` (for example `121-124`) to read particular PDF pages, such as those
   around a search passage's `pageStart`.
-- For a small original file, read `effective://api/files/{fileId}/contents`. It
+- For a small original file, read `effective://api/artifacts/{artifactId}/contents`. It
   comes back through the connector, so it works without network access.
-- `effective://api/files/{fileId}/download` returns a temporary signed link. A
+- `effective://api/artifacts/{artifactId}/download` returns a temporary signed link. A
   person can open it in a browser; an agent can fetch it only if the host in
   `networkRequirement.host` (usually `files.effectiveai.app`) is allowed. If
   fetching is refused, tell the user which host to allow. Do not drop the link:
