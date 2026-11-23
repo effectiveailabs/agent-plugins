@@ -7,6 +7,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Access](#access)
 - [Agent email aliases](#agent-email-aliases)
 - [Answers](#answers)
+- [Artifacts](#artifacts)
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
 - [Classifications](#classifications)
@@ -62,6 +63,12 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /answers` — Schedule an answer to a question
 - `GET /answers/{id}` — Get answer status or completed result
 
+## Artifacts
+
+- `GET /artifacts/{artifactId}` — Get artifact metadata and content links
+- `GET /artifacts/{artifactId}/text` — Read a bounded chunk of extracted artifact text
+- `GET /artifacts/{artifactId}/download` — Download one immutable artifact version
+
 ## Carrier groups
 
 - `GET /insurance/carrier-groups` — List carrier groups
@@ -88,9 +95,9 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 ## Files
 
-- `GET /files/{fileId}/download` — Download one immutable file version
-- `GET /files/{fileId}/text` — Read a bounded chunk of existing extracted text
-- `GET /files/{fileId}` — Get file metadata and content links
+- `GET /files/{fileId}/download` — Download one immutable file version (Deprecated; works until at least 2027-03-01)
+- `GET /files/{fileId}/text` — Read a bounded chunk of existing extracted text (Deprecated; works until at least 2027-03-01)
+- `GET /files/{fileId}` — Get file metadata and content links (Deprecated; works until at least 2027-03-01)
 
 ## Filing objections
 
