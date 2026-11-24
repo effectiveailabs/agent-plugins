@@ -41,6 +41,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [SERFF Insurance Types](#serff-insurance-types)
 - [Sessions](#sessions)
 - [Skills](#skills)
+- [Underwriting submissions](#underwriting-submissions)
 - [Users](#users)
 - [Views](#views)
 - [Webhooks](#webhooks)
@@ -387,6 +388,15 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /skills/{skillId}` — Get skill metadata and file manifest
 - `GET /skills` — List available skills
 - `GET /skills/{skillId}/bundle` — Download a skill for local agents
+
+## Underwriting submissions
+
+- `POST /insurance/underwriting/submissions` — Create an underwriting submission
+- `GET /insurance/underwriting/submissions/{submissionId}` — Get an underwriting submission
+- `POST /insurance/underwriting/submissions/{submissionId}/uploads` — Upload a file to an underwriting submission
+- `POST /insurance/underwriting/submissions/{submissionId}/uploads/complete` — Confirm a file upload to an underwriting submission
+- `POST /insurance/underwriting/submissions/{submissionId}/messages` — Add a message to an underwriting submission
+- `GET /insurance/underwriting/submissions/{submissionId}/documents` — List an underwriting submission’s documents
 
 ## Users
 
