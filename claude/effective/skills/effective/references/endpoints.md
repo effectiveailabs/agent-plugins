@@ -8,6 +8,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Agent email aliases](#agent-email-aliases)
 - [Answers](#answers)
 - [Artifacts](#artifacts)
+- [Assets](#assets)
 - [Carrier groups](#carrier-groups)
 - [Carriers](#carriers)
 - [Classifications](#classifications)
@@ -34,6 +35,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Product timelines](#product-timelines)
 - [Product types](#product-types)
 - [Products](#products)
+- [Projects](#projects)
 - [Regulatory documents](#regulatory-documents)
 - [SERFF Imports](#serff-imports)
 - [SERFF Insurance Types](#serff-insurance-types)
@@ -69,6 +71,15 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /artifacts/{artifactId}` — Get artifact metadata and content links
 - `GET /artifacts/{artifactId}/text` — Read a bounded chunk of extracted artifact text
 - `GET /artifacts/{artifactId}/download` — Download one immutable artifact version
+
+## Assets
+
+- `POST /assets` — Publish an Asset
+- `GET /assets` — List Assets
+- `GET /assets/{assetId}` — Get an Asset
+- `PATCH /assets/{assetId}` — Update an Asset’s details
+- `DELETE /assets/{assetId}` — Unpublish an Asset
+- `PUT /assets/{assetId}/content` — Replace an Asset’s content
 
 ## Carrier groups
 
@@ -327,6 +338,11 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/products/{productId}/catalog-requests` — Get your organization's catalog request for a product
 - `POST /insurance/products/{productId}/catalog-requests` — Ask Effective to catalogue a product
 - `GET /insurance/products/{productId}/availability/{state}/rating-programs` — List which rating program versions rate a product in a state
+
+## Projects
+
+- `GET /projects` — List projects
+- `GET /projects/{projectId}` — Get a project
 
 ## Regulatory documents
 
