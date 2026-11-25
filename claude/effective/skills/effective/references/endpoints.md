@@ -123,6 +123,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/filings` — List catalog filings
 - `GET /insurance/filings/{filingId}` — Get a catalog filing
 - `GET /insurance/filings/{filingId}/files` — List stored filing files
+- `POST /insurance/filings/{filingId}/document-refresh` — Request a document refresh for a Florida filing
 - `GET /insurance/filings/{filingId}/forms` — List extracted filing forms
 - `GET /insurance/filings/{filingId}/rate-impact` — Get extracted filing rate impact
 - `GET /insurance/filings/{filingId}/forms/{id}` — Get one extracted filing form
