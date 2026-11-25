@@ -397,6 +397,11 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /insurance/underwriting/submissions/{submissionId}/uploads/complete` — Confirm a file upload to an underwriting submission
 - `POST /insurance/underwriting/submissions/{submissionId}/messages` — Add a message to an underwriting submission
 - `GET /insurance/underwriting/submissions/{submissionId}/documents` — List an underwriting submission’s documents
+- `POST /insurance/underwriting/submissions/{submissionId}/extractions` — Start an extraction of an underwriting submission’s documents
+- `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}` — Get an extraction of an underwriting submission
+- `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/accept` — Accept proposals of an underwriting submission’s extraction
+- `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/dismiss` — Dismiss proposals of an underwriting submission’s extraction
+- `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/reopen` — Reopen proposals of an underwriting submission’s extraction
 
 ## Users
 
