@@ -5,7 +5,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Contents
 
 - [Access](#access)
-- [Agent email aliases](#agent-email-aliases)
 - [Answers](#answers)
 - [Artifacts](#artifacts)
 - [Assets](#assets)
@@ -13,6 +12,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Carriers](#carriers)
 - [Classifications](#classifications)
 - [Companies](#companies)
+- [Email addresses](#email-addresses)
 - [Files](#files)
 - [Filing objections](#filing-objections)
 - [Filings](#filings)
@@ -53,14 +53,6 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /access/{resource}` — Read a resource access list
 - `PUT /access/{resource}` — Replace a resource access list
 - `PATCH /access/{resource}` — Change selected resource access
-
-## Agent email aliases
-
-- `GET /agent-email/aliases` — List agent email aliases
-- `POST /agent-email/aliases` — Create an agent email alias
-- `GET /agent-email/aliases/{alias}` — Get an agent email alias
-- `PUT /agent-email/aliases/{alias}` — Replace alias routing config
-- `DELETE /agent-email/aliases/{alias}` — Delete an agent email alias
 
 ## Answers
 
@@ -105,6 +97,19 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/managed-filings/companies` — Find companies for filing preparation
 - `POST /insurance/managed-filings/companies` — Create a company for filing preparation
 - `GET /insurance/managed-filings/companies/{id}` — Get one company for filing preparation
+
+## Email addresses
+
+- `GET /email/addresses` — List email addresses
+- `POST /email/addresses` — Create an email address
+- `GET /email/addresses/{addressId}` — Get an email address
+- `PATCH /email/addresses/{addressId}` — Change where an email address delivers
+- `DELETE /email/addresses/{addressId}` — Delete an email address
+- `POST /email/addresses/{addressId}/rotate` — Give an email address a new token
+- `GET /email/addresses/{addressId}/emails` — List an address’s email
+- `GET /email/addresses/{addressId}/held-emails` — List an address’s held email
+- `GET /email/addresses/{addressId}/held-emails/{heldEmailId}` — Read a held email
+- `POST /email/addresses/{addressId}/held-emails/{heldEmailId}/resolve` — Resolve a held email
 
 ## Files
 
@@ -400,10 +405,17 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/underwriting/submissions/{submissionId}/documents` — List an underwriting submission’s documents
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions` — Start an extraction of an underwriting submission’s documents
 - `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}` — Get an extraction of an underwriting submission
+- `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/run` — Get the run behind an extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/accept` — Accept proposals of an underwriting submission’s extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/dismiss` — Dismiss proposals of an underwriting submission’s extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/reopen` — Reopen proposals of an underwriting submission’s extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/values` — Set the underwriter’s values on an underwriting submission
+- `GET /insurance/underwriting/submissions/{submissionId}/correspondence` — List a submission’s email correspondence
+- `GET /insurance/underwriting/submissions/{submissionId}/correspondence/{emailId}` — Read an email on a submission
+- `POST /insurance/underwriting/submissions/{submissionId}/correspondence/replies` — Send a reply on a submission’s email thread
+- `POST /insurance/underwriting/submissions/{submissionId}/correspondence/drafts` — Draft a reply on a submission’s email thread
+- `PATCH /insurance/underwriting/submissions/{submissionId}/correspondence/drafts/{emailId}` — Change a reply draft’s text
+- `POST /insurance/underwriting/submissions/{submissionId}/correspondence/drafts/{emailId}/send` — Send a reply draft
 
 ## Users
 
