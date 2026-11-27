@@ -66,16 +66,16 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `POST /apps/apps` — Create an app
 - `GET /apps/apps` — List apps
 - `GET /apps/apps/{appId}` — Get an app
-- `POST /apps/apps/{appId}/deployments` — Deploy an app
-- `GET /apps/apps/{appId}/deployments` — List an app’s deployments
+- `POST /apps/deployments` — Deploy an app
+- `GET /apps/deployments` — List an app’s deployments
 - `POST /apps/apps/{appId}/live` — Set the live deployment
-- `GET /apps/apps/{appId}/deployments/{deploymentId}` — Get a deployment
-- `POST /apps/apps/{appId}/release-uploads` — Upload a release bundle
-- `GET /apps/apps/{appId}/secrets` — List app secrets
-- `PUT /apps/apps/{appId}/secrets/{name}` — Set an app secret
-- `DELETE /apps/apps/{appId}/secrets/{name}` — Delete an app secret
-- `GET /apps/apps/{appId}/logs` — List app logs
-- `POST /apps/apps/{appId}/sign-ins` — Sign a browser in to an app
+- `GET /apps/deployments/{deploymentId}` — Get a deployment
+- `POST /apps/release-uploads` — Upload a release bundle
+- `GET /apps/secrets` — List app secrets
+- `PUT /apps/secrets/{name}` — Set an app secret
+- `DELETE /apps/secrets/{name}` — Delete an app secret
+- `GET /apps/logs` — List app logs
+- `POST /apps/sign-ins` — Sign a browser in to an app
 
 ## Artifacts
 
