@@ -43,6 +43,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - [Skills](#skills)
 - [Underwriting submissions](#underwriting-submissions)
 - [Users](#users)
+- [Vault](#vault)
 - [Views](#views)
 - [Webhooks](#webhooks)
 - [Your programs](#your-programs)
@@ -421,6 +422,10 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `GET /users/me` — Get current user
 - `GET /users` — List organization users
+
+## Vault
+
+- `POST /vault/folder/count` — Count entries in a Vault folder
 
 ## Views
 
