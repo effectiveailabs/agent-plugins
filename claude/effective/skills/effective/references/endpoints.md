@@ -6,6 +6,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - [Access](#access)
 - [Answers](#answers)
+- [Apps](#apps)
 - [Artifacts](#artifacts)
 - [Assets](#assets)
 - [Carrier groups](#carrier-groups)
@@ -59,6 +60,22 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 
 - `POST /answers` — Schedule an answer to a question
 - `GET /answers/{id}` — Get answer status or completed result
+
+## Apps
+
+- `POST /apps/apps` — Create an app
+- `GET /apps/apps` — List apps
+- `GET /apps/apps/{appId}` — Get an app
+- `POST /apps/apps/{appId}/deployments` — Deploy an app
+- `GET /apps/apps/{appId}/deployments` — List an app’s deployments
+- `POST /apps/apps/{appId}/live` — Set the live deployment
+- `GET /apps/apps/{appId}/deployments/{deploymentId}` — Get a deployment
+- `POST /apps/apps/{appId}/release-uploads` — Upload a release bundle
+- `GET /apps/apps/{appId}/secrets` — List app secrets
+- `PUT /apps/apps/{appId}/secrets/{name}` — Set an app secret
+- `DELETE /apps/apps/{appId}/secrets/{name}` — Delete an app secret
+- `GET /apps/apps/{appId}/logs` — List app logs
+- `POST /apps/apps/{appId}/sign-ins` — Sign a browser in to an app
 
 ## Artifacts
 
