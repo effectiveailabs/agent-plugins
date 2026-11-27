@@ -426,6 +426,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 ## Vault
 
 - `POST /vault/folder/count` — Count entries in a Vault folder
+- `POST /vault/folder/list` — List visible entries in a Vault folder
 
 ## Views
 
