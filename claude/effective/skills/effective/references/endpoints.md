@@ -423,6 +423,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /insurance/underwriting/submissions/{submissionId}/documents` — List an underwriting submission’s documents
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions` — Start an extraction of an underwriting submission’s documents
 - `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}` — Get an extraction of an underwriting submission
+- `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/contract` — Get the contract an extraction was checked against
 - `GET /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/run` — Get the run behind an extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/accept` — Accept proposals of an underwriting submission’s extraction
 - `POST /insurance/underwriting/submissions/{submissionId}/extractions/{extractionId}/dismiss` — Dismiss proposals of an underwriting submission’s extraction
