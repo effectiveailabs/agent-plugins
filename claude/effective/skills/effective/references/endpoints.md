@@ -121,7 +121,7 @@ Every Effective API endpoint, grouped by area. `discover` ranks endpoints for a 
 - `GET /email/addresses` — List email addresses
 - `POST /email/addresses` — Create an email address
 - `GET /email/addresses/{addressId}` — Get an email address
-- `PATCH /email/addresses/{addressId}` — Change where an email address delivers
+- `PATCH /email/addresses/{addressId}` — Update an email address
 - `DELETE /email/addresses/{addressId}` — Delete an email address
 - `POST /email/addresses/{addressId}/rotate` — Give an email address a new token
 - `GET /email/addresses/{addressId}/emails` — List an address’s email
